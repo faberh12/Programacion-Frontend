@@ -1,27 +1,44 @@
 .main {
-    width: 98%;
-    max-width: 1200px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    min-height: 80dvh;
-  
-  }
-  
-  .main .aside {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    border-radius: 10px;
-    width:  25%;
-    background: blue;
-  }
-  
-  .main-principal {
-    display: flex;
-    justify-content:  center;
-    align-items: center;
-    width: 64%;
-    border-radius: 10px;
-    background: blue;
-  }
+  display: flex;
+  padding: 20px;
+}
+
+.aside {
+  flex: 1;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin-right: 20px;
+}
+
+.main-principal {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal-image {
+  width: 100%;
+  max-width: 400px; /* Ajusta según tu diseño */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  text-align: left;
+}
+
+.article h2 {
+  margin-top: 0;
+}
+
+.article p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
