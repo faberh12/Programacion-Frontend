@@ -22,7 +22,19 @@
   max-width: 400px;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.exclusive-style {
+  border: 5px solid #4CAF50; /* Borde personalizado */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra */
+  filter: grayscale(50%); /* Filtro en escala de grises */
+  transform: rotate(-5deg) skew(-5deg); /* Transformación */
+}
+
+.exclusive-style:hover {
+  transform: scale(1.05) rotate(0) skew(0); /* Efecto hover */
+  filter: grayscale(0); /* Restablecer filtro al pasar el mouse */
 }
 
 .article {
